@@ -34,4 +34,7 @@ private:
 
 	UFUNCTION()
 	void JoinButtonClicked();
+
+	// The Subsys designed to handle all online session functionality
+	class UMultiplayerSessionsSubsystem* MultiplayerSessionsSubsystem;
 };
