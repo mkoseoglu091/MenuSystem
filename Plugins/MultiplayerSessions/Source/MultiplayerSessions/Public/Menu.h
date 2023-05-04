@@ -20,6 +20,7 @@ public:
 protected:
 
 	virtual bool Initialize() override;
+	virtual void NativeDestruct() override;
 
 private:
 
@@ -34,6 +35,8 @@ private:
 
 	UFUNCTION()
 	void JoinButtonClicked();
+
+	void MenuTearDown();
 
 	// The Subsys designed to handle all online session functionality
 	class UMultiplayerSessionsSubsystem* MultiplayerSessionsSubsystem;
